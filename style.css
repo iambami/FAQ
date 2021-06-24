@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Mulidisplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
 * {
@@ -6,13 +6,36 @@
 }
 
 body {
-    background-color: #e1e1e1;
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+    background-color: #f0f0f0f0;
+    font-family: 'Muli', sans-serif;   
+}
+
+h1 {
+    margin: 50px 0 30px;
     text-align: center;
-    height: 100vh;
+}
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
     overflow: hidden;
-    margin: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 03px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fq.activie::before, .faq.activie::after{
+    content: '\1f5e9';
+    font-family: 'Font Awesome 6 Free';
 }
